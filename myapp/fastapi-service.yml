@@ -6,5 +6,5 @@ spec:
   ports:
   - port: 8080
     targetPort: 8080
-    selector:
-      app: myapp-ui
+  selector:
+    app: myapp-ui
