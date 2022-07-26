@@ -8,13 +8,13 @@ spec:
   selector:
     matchLabels:
       app: myapp-ui
-    template:
-      metadata:
-        labels:
-          app: myapp-ui
-      spec:
-        containers:
-        - image: docker.io/gokuvegeta/myfastapiimage
-          name: myapp-ui-first
-          ports:
-          - containerPort: 8080
+  template:
+    metadata:
+      labels:
+        app: myapp-ui
+    spec:
+      containers:
+      - image: docker.io/gokuvegeta/myfastapiimage
+        name: myapp-ui-first
+        ports:
+        - containerPort: 8080
