@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: myapp-ui
+    template:
+      metadata:
+        labels:
+          app: myapp-ui
+      spec:
+        containers:
+        - image: docker.io/gokuvegeta/myfastapiimage
+          name: myapp-ui-first
+          ports:
+          - containerPort: 8080
