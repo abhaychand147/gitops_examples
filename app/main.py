@@ -13,5 +13,3 @@ def first():
 @app.get("/second")
 def second():
     return {"Second":"API"}
-
-
