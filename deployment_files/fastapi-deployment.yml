@@ -14,7 +14,7 @@ spec:
         app: myapp-ui
     spec:
       containers:
-      - image: docker.io/gokuvegeta/myfastapiimage
+      - image: docker.io/gokuvegeta/myfastapiimage:latest
         name: myapp-ui-first
         ports:
         - containerPort: 80

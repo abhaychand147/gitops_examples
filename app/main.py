@@ -10,4 +10,8 @@ def print_item():
 def first():
     return {"First:API"}
 
+@app.get("/second")
+def second():
+    return {"Second:API"}
+
 

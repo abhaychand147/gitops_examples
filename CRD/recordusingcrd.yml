@@ -1,0 +1,10 @@
+apiVersion: contoso.com/v1alpha1
+kind: MyPlatform
+metadata:
+  name: test-crd
+spec:
+  replicas: 1
+  appId: test-crd
+  language: python
+  environmentType: dev
+  instanceSize: small
